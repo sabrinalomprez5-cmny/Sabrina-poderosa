@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(function () {
           if (statusEl) {
             statusEl.textContent =
-              "Une erreur est survenue. Vous pouvez aussi m'écrire directement à sabrinalomprez5@gmail.com.";
+              "Une erreur est survenue. Vous pouvez aussi m'écrire directement à contact@sabrina-poderosa.fr.";
             statusEl.style.color = "var(--rose)";
           }
         })
