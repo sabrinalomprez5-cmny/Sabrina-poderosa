@@ -16,9 +16,44 @@ document.addEventListener("DOMContentLoaded", function () {
         nav.classList.remove("is-open");
         toggle.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
+        closeAllDropdowns();
       });
     });
   }
+
+  // Menu déroulant "Accompagnements"
+  function closeAllDropdowns() {
+    document.querySelectorAll(".dropdown-menu.is-open").forEach(function (menu) {
+      menu.classList.remove("is-open");
+    });
+    document.querySelectorAll(".dropdown-toggle[aria-expanded='true']").forEach(function (btn) {
+      btn.setAttribute("aria-expanded", "false");
+    });
+  }
+
+  document.querySelectorAll(".dropdown-toggle").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var parent = btn.closest(".has-dropdown");
+      var menu = parent ? parent.querySelector(".dropdown-menu") : null;
+      if (!menu) return;
+      var isOpen = menu.classList.contains("is-open");
+      closeAllDropdowns();
+      if (!isOpen) {
+        menu.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+
+  document.addEventListener("click", function () {
+    closeAllDropdowns();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeAllDropdowns();
+  });
 
   // Animation d'apparition au scroll
   var revealEls = document.querySelectorAll(".reveal");
