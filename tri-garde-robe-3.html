@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tri de garde-robe | Sabrina Poderosa</title>
+  <meta name="description" content="Et si ton dressing racontait encore une histoire que tu as déjà quittée ? Découvrez l'accompagnement tri de garde-robe par Sabrina Poderosa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Surcharge locale : le header du style.css fourni est en fond bordeaux plein,
+       mais le visuel de référence montre un header blanc/ivoire avec logo et texte bordeaux. */
+    .site-header { background: var(--ivory); border-bottom: 1px solid var(--line); }
+    .brand, .brand span { color: var(--title-color); }
+    .main-nav a, .dropdown-toggle { color: var(--plume); }
+    .main-nav a:hover, .main-nav a[aria-current="page"] { color: var(--rose); border-color: var(--rose); }
+    .dropdown-toggle:hover, .dropdown-toggle[aria-expanded="true"], .dropdown-toggle[aria-current="page"] { color: var(--rose); }
+    .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after { background: var(--plume); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="logo-white.png" alt="Sabrina — Accompagnatrice en image" style="height: 40px; width: auto;"></a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+              Accompagnements
+              <span class="dropdown-caret" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="colorimetrie.html">Colorimétrie</a></li>
+              <li><a href="tri-garde-robe.html" aria-current="page">Tri de garde-robe</a></li>
+              <li><a href="garde-robe-capsule.html">Création d'une garde-robe capsule</a></li>
+              <li><a href="shopping-personnalise.html">Shopping personnalisé</a></li>
+              <li><a href="accompagnement-sur-mesure.html">Accompagnement sur mesure</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Lettres ouvertes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="section" style="padding-bottom:0;">
+      <div class="container">
+        <div class="accomp-hero">
+
+          <div class="accomp-hero-text">
+            <span class="eyebrow">Accompagnements</span>
+            <h1 class="reveal">Tri de garde-robe</h1>
+            <p class="lede reveal">Et si ton dressing racontait encore une histoire que tu as déjà quittée ?</p>
+            <p class="reveal" style="color:var(--plume-soft); font-size:1.05rem; line-height:1.8; max-width:46ch; margin-top:8px;">Faire du tri, ce n'est pas seulement ranger. C'est apprendre à se détacher de ce qui ne nous ressemble plus, pour faire de la place à la femme que l'on est aujourd'hui.</p>
+            <div style="margin-top:20px;">
+              <a class="btn btn-primary" href="contact.html">Me contacter</a>
+            </div>
+          </div>
+
+          <div class="accomp-hero-media">
+            <img src="img/tri-garde-robe/tri-garde-robe-hero.jpg" alt="Sabrina accompagnant une cliente devant un miroir, dans son atelier entouré de vêtements">
+            <div class="accomp-postit">
+              Avant de lui dire au revoir.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section alternée 1 : photo à gauche / texte à droite, fond lin -->
+    <section class="accomp-alt-section bg-linen">
+      <div class="container">
+        <div class="accomp-grid">
+          <div class="accomp-media">
+            <img src="img/tri-garde-robe/tri-garde-robe-penderie-triee.png" alt="Dressing organisé, tenues sélectionnées et harmonieuses sur un portant">
+          </div>
+          <div class="accomp-text">
+            <span class="accomp-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21c0-6-4-9-8-10 1 5 3 9 8 10Z"/><path d="M12 21c0-8 4-13 9-15-1 7-3 13-9 15Z"/></svg></span>
+            <h2 class="reveal">Retrouver de la légèreté</h2>
+            <p class="reveal">Un dressing encombré peut parfois refléter un esprit encombré. Chaque matin, choisir une tenue devient plus compliqué.</p>
+            <p class="reveal">On hésite. On essaye. On repose. Et l'on finit souvent par remettre la même chose. Pas parce que l'on manque de vêtements. Mais parce qu'on ne se reconnaît plus vraiment dans ce qui nous entoure.</p>
+            <div class="accomp-callout reveal">
+              Mon objectif n'est pas de vider ton dressing, mais que tu retrouves le plaisir de l'ouvrir.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section alternée 2 : texte à gauche / photo à droite avec post-it -->
+    <section class="accomp-alt-section">
+      <div class="container">
+        <div class="accomp-grid is-reversed">
+          <div class="accomp-text">
+            <span class="accomp-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21c0-6-4-9-8-10 1 5 3 9 8 10Z"/><path d="M12 21c0-8 4-13 9-15-1 7-3 13-9 15Z"/></svg></span>
+            <h2 class="reveal">Retrouver la femme derrière les rôles</h2>
+            <p class="reveal">Au fil de la vie, nous traversons de nombreuses étapes. Nous devenons étudiantes. Professionnelles. Compagnes. Mamans parfois. Et il arrive qu'à force de prendre soin des autres, nous oubliions doucement de prendre soin de nous.</p>
+            <p class="reveal">Être maman ne signifie pas cesser d'être une femme. Prendre soin de toi n'enlève rien à tout ce que tu donnes aux autres. Au contraire, c'est aussi une façon de te retrouver.</p>
+          </div>
+          <div class="accomp-media">
+            <img src="img/tri-garde-robe/tri-garde-robe-essayage-miroir.jpg" alt="Cliente essayant une tenue devant un miroir, entourée de vêtements">
+            <div class="accomp-postit is-alt">
+              Prendre soin de toi n'enlève rien à ce que tu donnes aux autres.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section alternée 3 : photo à gauche / texte + liste à droite, fond lin -->
+    <section class="accomp-alt-section bg-linen">
+      <div class="container">
+        <div class="accomp-grid">
+          <div class="accomp-media">
+            <img src="img/tri-garde-robe/tri-garde-robe-penderie-desordre.png" alt="Vêtements en désordre, empilés et pendus pêle-mêle avant le tri">
+          </div>
+          <div class="accomp-text">
+            <span class="accomp-leaf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21c0-6-4-9-8-10 1 5 3 9 8 10Z"/><path d="M12 21c0-8 4-13 9-15-1 7-3 13-9 15Z"/></svg></span>
+            <h2 class="reveal">Mon accompagnement</h2>
+            <p class="reveal">Je ne viens pas faire du rangement à ta place. Je viens t'accompagner. Nous prendrons le temps d'ouvrir ton dressing, de regarder chaque pièce avec bienveillance. Sans jugement. Sans culpabilité.</p>
+            <p class="reveal">Je ne te dirai jamais ce que tu dois garder ou jeter. Je t'aiderai à te poser les bonnes questions : est-ce que ce vêtement te ressemble encore ? Est-ce qu'il te fait du bien lorsque tu le portes ?</p>
+            <p class="reveal" style="font-weight:600; color:var(--plume);">Ce avec quoi tu repartiras :</p>
+            <ul style="list-style:none; padding:0; margin:0;">
+              <li class="reveal letter-p-tight">— Un dressing plus clair</li>
+              <li class="reveal letter-p-tight">— Des tenues plus faciles à composer</li>
+              <li class="reveal letter-p-tight">— Moins de charge mentale</li>
+              <li class="reveal letter-p-tight">— La sensation d'avoir fait de la place, pas seulement dans ton armoire, en toi aussi</li>
+            </ul>
+            <div style="margin-top:22px;">
+              <a class="btn btn-secondary" href="contact.html">Me contacter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clôture -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 60ch; margin: 0 auto;">
+          <h2 class="reveal">Une dernière chose…</h2>
+          <p class="reveal letter-p">Je ne crois pas qu'un tri de garde-robe consiste à se séparer de vêtements.</p>
+          <p class="reveal letter-p-tight">Je crois qu'il consiste parfois à remercier une partie de son histoire…</p>
+
+          <p class="closing-line reveal">
+            Pour laisser un peu plus de place à la femme que l'on est en train de devenir.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="reveal">Envie d'en discuter ?</h2>
+        <p class="lede reveal">Un premier échange suffit pour poser les bases, en douceur et sans engagement.</p>
+        <div class="btn-group reveal">
+          <a class="btn btn-secondary" href="prestations.html">Voir les accompagnements</a>
+          <a class="btn btn-primary" href="contact.html">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>Sabrina · Accompagnatrice en image</span>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/sabrina_accompagnatriceenimage/" target="_blank" rel="noopener">Instagram</a>
+        <a href="mailto:contact@sabrina-poderosa.fr">contact@sabrina-poderosa.fr</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+      </div>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
