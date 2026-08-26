@@ -494,6 +494,61 @@ h2, h3 {
   color: rgba(255,255,255,0.55);
 }
 .footer-legal a:hover { color: var(--rose); }
+.footer-copyright {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+  margin: 0;
+}
+
+/* footer-links-row : par défaut (mobile/tablette), empile footer-contact et footer-legal
+   exactement comme avant — aucun changement visuel sous 761px. */
+.footer-links-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ---------- Footer : mise en page desktop uniquement ---------- */
+@media (min-width: 761px) {
+  .site-footer { padding: 72px 0; }
+  .site-footer .container { gap: 28px; }
+
+  .footer-links-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+  }
+  .footer-links-row .footer-contact,
+  .footer-links-row .footer-legal {
+    display: contents;
+  }
+  .footer-links-row a {
+    order: 4;
+  }
+  .footer-links-row a[href^="mailto:"] { order: 1; }
+  .footer-links-row a[href*="instagram.com"] { order: 2; }
+  .footer-links-row a[href="mentions-legales.html"] { order: 3; }
+  .footer-links-row a[href="politique-confidentialite.html"] { order: 4; }
+
+  .footer-links-row a::after { content: none; }
+  .footer-links-row a[href^="mailto:"]::after,
+  .footer-links-row a[href*="instagram.com"]::after,
+  .footer-links-row a[href="mentions-legales.html"]::after {
+    content: "|";
+    margin: 0 16px;
+    color: rgba(255,255,255,0.35);
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .footer-copyright {
+    font-size: 0.85rem;
+    color: #FFFFFF;
+  }
+}
 
 /* ---------- Page hero (sous-pages) ---------- */
 .page-hero {
